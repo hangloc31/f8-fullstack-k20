@@ -1,0 +1,182 @@
+a {
+  color: #1d4ed8;
+}
+
+.main-nav>ul>li>a {
+  background: #f1f5f9;
+}
+
+.post-content h2~p {
+  color: #0f172a;
+}
+
+.post-content h2+p {
+  color: #64748b;
+}
+
+a {
+  &:link {
+    color: #2563eb;
+  }
+
+  &:visited {
+    color: #9333ea;
+  }
+
+  &:hover {
+    color: #1e40af;
+  }
+
+  &:active {
+    color: #1e3a8a;
+  }
+
+  &[href^="https://"] {
+    color: #2563eb;
+  }
+
+  &[href$=".pdf"] {
+    color: #ea580c;
+  }
+}
+
+.author a {
+  color: #f97316;
+}
+
+.post {
+  background: white;
+
+  &.featured {
+    background: #fefce8;
+  }
+
+  .post-title {
+    color: #0f172a;
+  }
+
+  &:hover {
+    background: #f8fafc;
+
+    .post-title {
+      color: #2563eb;
+    }
+  }
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+
+  &:hover {
+    background: #3b82f6;
+  }
+
+  &:active {
+    background: #1d4ed8;
+  }
+}
+
+button[class*="btn"] {
+  background: #e2e8f0;
+}
+
+button[disabled] {
+  background: #94a3b8;
+  color: #cbd5e1;
+}
+
+input:focus {
+  background: #eff6ff;
+}
+
+.comparison-table thead th {
+  background: #0f172a;
+  color: white;
+}
+
+.comparison-table tbody tr:nth-child(2n + 1) {
+  background: #f8fafc;
+}
+
+.comparison-table tbody tr:nth-child(2n) {
+  background: white;
+}
+
+.comparison-table tbody tr:last-child {
+  background: #dbeafe;
+}
+
+.comparison-table tbody tr[data-priority="high"] {
+  background: #fee2e2;
+}
+
+.steps {
+  & li:first-child {
+    color: #16a34a;
+  }
+
+  & li:last-child {
+    color: #dc2626;
+  }
+
+  & li:nth-child(3) {
+    background: #fef3c7;
+  }
+
+  & li::marker {
+    color: #2563eb;
+  }
+}
+
+feature-list li::marker {
+  color: #2563eb;
+}
+
+.sidebar .widget:nth-last-child(n + 2) {
+  background: white;
+}
+
+.lead {
+  &::first-line {
+    color: #0f172a;
+  }
+
+  &::first-letter {
+    color: #2563eb;
+  }
+}
+
+.quote::before {
+  content: "\"";
+  color: #cbd5e1;
+}
+
+.quote::after {
+  content: "\"";
+  color: #cbd5e1;
+}
+
+::selection {
+  background: #bfdbfe;
+  color: #0f172a;
+}
+
+.badge::before {
+  content: "";
+  color: #ef4444;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ef4444;
+  margin: 0 5px;
+}
+
+input[required] {
+  background: #fffbeb;
+}
+
+[lang^="vi"] {
+  color: #0f172a;
+}
