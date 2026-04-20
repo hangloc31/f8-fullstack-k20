@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trung tâm cấu hình giao diện</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Trung tâm cấu hình giao diện</h1>
+  </header>
+  <section class="wrapper">
+    <div class="container">
+      <p>Chọn giao diện(Theme):</p>
+      <input type="radio" name="theme" id="theme-light"><label class="text-light" for="theme-light">Light</label>
+      <input type="radio" name="theme" id="theme-dark"><label class="text-dark" for="theme-dark">Dark</label>
+    </div>
+    <div class="container">
+      <p>Chọn màu chủ đạo(Color):</p>
+      <input type="radio" name="color" id="color-red"><label class="text-red" for="color-red">Red</label>
+      <input type="radio" name="color" id="color-blue"><label class="text-blue" for="color-blue">Blue</label>
+      <input type="radio" name="color" id="color-green"><label class="text-green" for="color-green">Green</label>
+    </div>
+    <div class="container">
+      <p>Chọn ngôn ngữ(Language):</p>
+      <input type="radio" name="language" id="language-vi"><label class="text-vi" for="language-vi">VI</label>
+      <input type="radio" name="language" id="language-en"><label class="text-en" for="language-en">EN</label>
+    </div>
+    <div class="container">
+      <p>Tùy chọn bổ sung(Options - Checkbox):</p>
+      <input type="checkbox" name="checkbox-1" id="checkbox-1"><label class="text-box1" for="checkbox-1">Hiển thị mô tả
+        nâng cao</label>
+      <input type="checkbox" name="checkbox-2" id="checkbox-2"><label class="text-box2" for="checkbox-2">Bật chế độ
+        Eco</label>
+      <input type="checkbox" name="checkbox-3" id="checkbox-3"><label class="text-box3" for="checkbox-3">Hiển thị cảnh
+        báo quan
+        trọng</label>
+    </div>
+
+    <!-- Expected theme -->
+    <div class="expected-theme">
+      <div class="expected-light">
+        <label>Theme Light: Giao diện sáng, chữ đen.</label>
+      </div>
+      <div class="expected-dark">
+        <label>Theme Dark: Giao diện tối, chữ sáng.</label>
+      </div>
+    </div>
+
+    <!-- Expected color -->
+    <div class="expected-color">
+      <div class="expected-red">
+        <label>Màu Red: được nhấn mạnh khi chọn Red.</label>
+      </div>
+      <div class="expected-blue">
+        <label>Màu Blue: được nhấn mạnh khi chọn Blue.</label>
+      </div>
+      <div class="expected-green">
+        <label>Màu Green: được nhấn mạnh khi chọn Green.</label>
+      </div>
+    </div>
+
+    <!-- Expected language -->
+    <div class="expected-lang">
+      <div class="expected-vi">
+        <label>[VI] Xin chào bạn! Khi chọn VI, dòng này rõ hơn.</label>
+      </div>
+      <div class="expected-en">
+        <label>[EN] Hello, world! Khi chọn EN, dòng này rõ hơn.</label>
+      </div>
+    </div>
+
+    <!-- Expected options -->
+    <div class="expected-options">
+      <div class="expected-checkbox-1">
+        <label>Mô tả nâng cao: giải thích kỹ hơn về cách các lựa chọn đang ảnh hưởng giao diện.</label>
+      </div>
+      <div class="expected-checkbox-2">
+        <label>Chế độ Eco: mô phỏng trạng thái tiết kiệm tài nguyên cho giao diện.</label>
+      </div>
+      <div class="expected-checkbox-3">
+        <label>Cảnh báo quan trọng: khu vực dùng để nhấn mạnh thông tin hệ thống.</label>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

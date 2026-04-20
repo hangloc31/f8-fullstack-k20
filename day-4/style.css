@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace, sans-serif, 'Times New Roman', Times, serif;
+}
+
+header {
+  background: #f05123;
+  color: white;
+  padding: 20px 40px;
+}
+
+.wrapper {
+  margin: 0 20px;
+}
+
+.container {
+  padding: 20px;
+
+  input {
+    margin: 20px 10px 0 0;
+  }
+
+  label {
+    margin-right: 20px;
+  }
+}
+
+.expected-theme {
+  padding: 20px;
+
+  .expected-light,
+  .expected-dark {
+    opacity: 0.3;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+
+.expected-color {
+  padding: 20px;
+
+  .expected-red,
+  .expected-blue,
+  .expected-green {
+    opacity: 0.3;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+
+.expected-lang {
+  padding: 20px;
+
+  .expected-vi,
+  .expected-en {
+    opacity: 0.3;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+
+.expected-options {
+  padding: 20px;
+
+  .expected-checkbox-1,
+  .expected-checkbox-2,
+  .expected-checkbox-3 {
+    opacity: 0.3;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+
+/* NHÓM 1: CHỌN GIAO DIỆN (THEME) */
+
+/* Khi chọn LIGHT */
+.wrapper:has(#theme-light:checked) .text-light {
+  background: #fff8cc;
+  color: #8b5e00;
+}
+
+.wrapper:has(#theme-light:checked) .expected-light {
+  opacity: 1;
+  background: #fff8cc;
+  color: #111827;
+}
+
+/* Khi chọn DARK */
+.wrapper:has(#theme-dark:checked) .text-dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+.wrapper:has(#theme-dark:checked) .expected-dark {
+  opacity: 1;
+  background: #111827;
+  color: #f9fafb;
+}
+
+/* NHÓM 2: CHỌN MÀU CHỦ ĐẠO (COLOR) */
+
+/* Nhấn nút màu red */
+.wrapper:has(#color-red:checked) .text-red {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.wrapper:has(#color-red:checked) .expected-red {
+  background: #fee2e2;
+  color: #7f1d1d;
+  opacity: 1;
+}
+
+/* Nhấn nút màu blue */
+.wrapper:has(#color-blue:checked) .text-blue {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.wrapper:has(#color-blue:checked) .expected-blue {
+  background: #dbeafe;
+  color: #1d4ed8;
+  opacity: 1;
+}
+
+/* Nhấn nút màu green */
+.wrapper:has(#color-green:checked) .text-green {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.wrapper:has(#color-green:checked) .expected-green {
+  background: #dcfce7;
+  color: #166534;
+  opacity: 1;
+}
+
+/* NHÓM 3: CHỌN NGÔN NGỮ (LANGUAGE) */
+
+/* Nhấn nút VI */
+.wrapper:has(#language-vi:checked) .text-vi {
+  background: #bbf7d0;
+  color: #166534;
+}
+
+.wrapper:has(#language-vi:checked) .expected-vi {
+  color: #166534;
+  opacity: 1;
+}
+
+/* Nhấn nút EN */
+.wrapper:has(#language-en:checked) .text-en {
+  background: #bfdbfe;
+  color: #1d4ed8;
+}
+
+.wrapper:has(#language-en:checked) .expected-en {
+  color: #1d4ed8;
+  opacity: 1;
+}
+
+/* NHÓM 4: TÙY CHỌN BỔ SUNG (OPTIONS) */
+/* nhấn vào check-box 1 */
+.wrapper:has(#checkbox-1:checked) .text-box1 {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.wrapper:has(#checkbox-1:checked) .expected-options .expected-checkbox-1 {
+  background: #fef3c7;
+  color: #92400e;
+  opacity: 1;
+}
+
+/* Nhấn vào check-box 2 */
+.wrapper:has(#checkbox-2:checked) .text-box2 {
+  background: #bbf7d0;
+  color: #15803d;
+}
+
+.wrapper:has(#checkbox-2:checked) .expected-options .expected-checkbox-2 {
+  background: #bbf7d0;
+  color: #166534;
+  opacity: 1;
+}
+
+/* Nhấn vào check-box 3 */
+.wrapper:has(#checkbox-3:checked) .text-box3 {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.wrapper:has(#checkbox-3:checked) .expected-options .expected-checkbox-3 {
+  background: #fee2e2;
+  color: #b91c1c;
+  opacity: 1;
+}

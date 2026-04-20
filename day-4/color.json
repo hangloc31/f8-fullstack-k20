@@ -1,0 +1,135 @@
+{
+  "theme": {
+    "light": {
+      "label": {
+        "background": "#fff8cc",
+        "text": "#8b5e00"
+      },
+      "content": {
+        "background": "#fff8cc",
+        "text": "#111827"
+      }
+    },
+    "dark": {
+      "label": {
+        "background": "#111827",
+        "text": "#f9fafb"
+      },
+      "content": {
+        "background": "#111827",
+        "text": "#f9fafb"
+      }
+    }
+  },
+  "color": {
+    "red": {
+      "label": {
+        "background": "#fee2e2",
+        "text": "#991b1b"
+      },
+      "content": {
+        "background": "#fee2e2",
+        "text": "#7f1d1d"
+      }
+    },
+    "blue": {
+      "label": {
+        "background": "#dbeafe",
+        "text": "#1d4ed8"
+      },
+      "content": {
+        "background": "#dbeafe",
+        "text": "#1d4ed8"
+      }
+    },
+    "green": {
+      "label": {
+        "background": "#dcfce7",
+        "text": "#166534"
+      },
+      "content": {
+        "background": "#dcfce7",
+        "text": "#166534"
+      }
+    }
+  },
+  "language": {
+    "vi": {
+      "label": {
+        "background": "#bbf7d0",
+        "text": "#166534"
+      },
+      "content": {
+        "text": "#166534"
+      }
+    },
+    "en": {
+      "label": {
+        "background": "#bfdbfe",
+        "text": "#1d4ed8"
+      },
+      "content": {
+        "text": "#1d4ed8"
+      }
+    }
+  },
+  "options": {
+    "advanced": {
+      "label": {
+        "background": "#fef3c7",
+        "text": "#92400e"
+      },
+      "content": {
+        "background": "#fef3c7",
+        "text": "#92400e"
+      }
+    },
+    "eco": {
+      "label": {
+        "background": "#bbf7d0",
+        "text": "#15803d"
+      },
+      "content": {
+        "background": "#bbf7d0",
+        "text": "#166534"
+      }
+    },
+    "warning": {
+      "label": {
+        "background": "#fee2e2",
+        "text": "#b91c1c"
+      },
+      "content": {
+        "background": "#fee2e2",
+        "text": "#b91c1c"
+      }
+    }
+  },
+  "common": {
+    "inactive": "#9ca3af",
+    "panel": {
+      "background": "#f9fafb",
+      "text": "#111827"
+    },
+    "header": {
+      "background": "#f98000",
+      "text": "#f9fafb"
+    },
+    "groupTitle": {
+      "background": "#e5e7eb",
+      "text": "#111827"
+    },
+    "labelDefault": {
+      "background": "#eef2ff",
+      "text": "#4b5563"
+    },
+    "contentArea": {
+      "background": "#f3f4f6",
+      "text": "#111827"
+    },
+    "contentDefault": {
+      "background": "#ffffff",
+      "text": "#9ca3af"
+    }
+  }
+}
