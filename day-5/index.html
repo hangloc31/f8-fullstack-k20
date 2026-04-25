@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        padding: 20px;
+      }
+
+      .shape-wrapper {
+        display: inline-block;
+        margin: 10px 50px;
+      }
+
+      .square {
+        width: 100px;
+        height: 100px;
+        border: 3px solid #d15841;
+      }
+
+      .rectangle {
+        width: 200px;
+        height: 100px;
+        border: 3px solid #5a96d7;
+      }
+
+      .up-triangle {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid #6ac36f;
+      }
+
+      .down-triangle {
+        width: 0;
+        height: 0;
+        border-top: 100px solid #e3a031;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+      }
+
+      .left-triangle {
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-right: 100px solid #905cb2;
+      }
+
+      .right-triangle {
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-left: 100px solid #d48332;
+      }
+
+      .trapezium {
+        width: 200px;
+        border-top: 30px solid transparent;
+        border-right: 50px solid transparent;
+        border-left: 50px solid transparent;
+        border-bottom: 70px solid #61b99d;
+      }
+
+      .wide-triangle {
+        width: 0;
+        height: 0;
+        border-right: 70px solid transparent;
+        border-left: 70px solid transparent;
+        border-bottom: 50px solid #3a485d;
+      }
+
+      .acute-triangle {
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 100px solid #6ac36f;
+      }
+
+      .isosceles-triangle {
+        width: 0;
+        height: 0;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-bottom: 70px solid #6ac36f;
+      }
+
+      .right-arrow {
+        width: 150px;
+        height: 0;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 60px solid #529e86;
+      }
+
+      .left-arrow {
+        width: 120px;
+        height: 0;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-right: 60px solid #8348a9;
+      }
+
+      .red-flag {
+        width: 150px;
+        height: 0;
+        border-top: 40px solid #d15841;
+        border-bottom: 40px solid #d15841;
+        border-left: 50px solid #d15841;
+        border-right: 50px solid transparent;
+      }
+
+      .f-letter,
+      .digit-eight {
+        position: relative;
+        width: 150px;
+        height: 190px;
+        display: inline-block;
+      }
+
+      .vertical {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 150px;
+        background-color: #d15841;
+      }
+
+      .top-bar {
+        position: absolute;
+        top: 20px;
+        width: 110px;
+        height: 30px;
+        background-color: #d15841;
+      }
+
+      .middle-bar {
+        position: absolute;
+        bottom: 75px;
+        width: 110px;
+        height: 30px;
+        background-color: #d15841;
+      }
+
+      .digit-eight .vertical-right {
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        width: 30px;
+        height: 150px;
+        background-color: #d15841;
+      }
+
+      .digit-eight .top-bar {
+        position: absolute;
+        top: 20px;
+        width: 135px;
+        height: 30px;
+        background-color: #d15841;
+      }
+
+      .digit-eight .bottom-bar {
+        position: absolute;
+        bottom: 0;
+        width: 135px;
+        height: 30px;
+        background-color: #d15841;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Các hình có thể tạo được với Border</h1>
+
+    <div class="shape-wrapper">
+      <div class="square"></div>
+      <p>1. Hình vuông</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="rectangle"></div>
+      <p>2. Hình chữ nhật</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="up-triangle"></div>
+      <p>3. Tam giác lên</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="down-triangle"></div>
+      <p>4. Tam giác xuống</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="left-triangle"></div>
+      <p>5. Tam giác trái</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="right-triangle"></div>
+      <p>6. Tam giác phải</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="trapezium"></div>
+      <p>7. Hình thang</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="wide-triangle"></div>
+      <p>8. Tam giác rộng</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="acute-triangle"></div>
+      <p>9. Tam giác nhọn</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="isosceles-triangle"></div>
+      <p>10. Tam giác cân</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="right-arrow"></div>
+      <p>11. Mũi tên phải</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="left-arrow"></div>
+      <p>12. Mũi tên trái</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="red-flag"></div>
+      <p>13. Ribbon/Lá cờ</p>
+    </div>
+
+    <div class="shape-wrapper">
+      <div class="f-letter">
+        <div class="vertical"></div>
+        <div class="top-bar"></div>
+        <div class="middle-bar"></div>
+      </div>
+
+      <div class="digit-eight">
+        <div class="vertical"></div>
+        <div class="vertical-right"></div>
+        <div class="top-bar"></div>
+        <div class="middle-bar"></div>
+        <div class="bottom-bar"></div>
+      </div>
+      <p>14. F8</p>
+    </div>
+  </body>
+</html>
