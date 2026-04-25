@@ -121,66 +121,44 @@
         border-right: 50px solid transparent;
       }
 
-      .f-letter,
-      .digit-eight {
-        position: relative;
-        width: 150px;
-        height: 190px;
+      .letter-f {
         display: inline-block;
-      }
-
-      .vertical {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 30px;
         height: 150px;
-        background-color: #d15841;
+        width: 100px;
+        border-left: 30px solid #d15841;
+        border-top: 30px solid #d15841;
       }
-
-      .top-bar {
-        position: absolute;
-        top: 20px;
-        width: 110px;
+      .letter-f::before {
+        content: "";
+        display: inline-block;
         height: 30px;
-        background-color: #d15841;
+        width: 70px;
+        margin-top: 30px;
+        border-top: 30px solid #d15841;
       }
 
-      .middle-bar {
-        position: absolute;
-        bottom: 75px;
-        width: 110px;
-        height: 30px;
-        background-color: #d15841;
-      }
-
-      .digit-eight .vertical-right {
-        position: absolute;
-        bottom: 0;
-        right: 15px;
-        width: 30px;
+      .digit-8 {
+        display: inline-block;
         height: 150px;
-        background-color: #d15841;
+        width: 100px;
+        margin-left: 20px;
+        border-right: 30px solid #d15841;
+        border-left: 30px solid #d15841;
+        border-top: 30px solid #d15841;
+        border-bottom: 30px solid #d15841;
       }
-
-      .digit-eight .top-bar {
-        position: absolute;
-        top: 20px;
-        width: 135px;
+      .digit-8::before {
+        content: "";
+        display: inline-block;
         height: 30px;
-        background-color: #d15841;
-      }
-
-      .digit-eight .bottom-bar {
-        position: absolute;
-        bottom: 0;
-        width: 135px;
-        height: 30px;
-        background-color: #d15841;
+        width: 70px;
+        margin-top: 30px;
+        border-top: 30px solid #d15841;
       }
 
       .shape-wrapper p {
         text-align: center;
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -253,20 +231,9 @@
     </div>
 
     <div class="shape-wrapper">
-      <div class="wrapper-f8">
-        <div class="f-letter">
-          <div class="vertical"></div>
-          <div class="top-bar"></div>
-          <div class="middle-bar"></div>
-        </div>
-
-        <div class="digit-eight">
-          <div class="vertical"></div>
-          <div class="vertical-right"></div>
-          <div class="top-bar"></div>
-          <div class="middle-bar"></div>
-          <div class="bottom-bar"></div>
-        </div>
+      <div>
+        <div class="letter-f"></div>
+        <div class="digit-8"></div>
       </div>
       <p>14. F8</p>
     </div>
