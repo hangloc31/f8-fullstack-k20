@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Trang liên hệ của Hàng Lộc" />
+    <title>Contact | Hàng Lộc Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+  </head>
+
+  <body id="top">
+    <header>
+      <div>
+        <a href="../index.html">
+          <img src="../images/logo.png" alt="logo" width="70" height="70" />
+        </a>
+      </div>
+      <nav aria-label="Điều hướng chính">
+        <ul>
+          <li>
+            <a href="../index.html"><span class="mdi mdi-home"></span> Home</a>
+          </li>
+          <li>
+            <a href="about.html"><span class="mdi mdi-account"></span> About</a>
+          </li>
+          <li>
+            <a href="skills.html"
+              ><span class="mdi mdi-lightbulb-variant-outline"></span> Skills</a
+            >
+          </li>
+          <li>
+            <a href="projects.html"
+              ><span class="mdi mdi-folder"></span> Projects</a
+            >
+          </li>
+          <li>
+            <a href="blog.html"
+              ><span class="mdi mdi-post-outline"></span> Blog</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" aria-current="page"
+              ><span class="mdi mdi-email-outline"></span> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section aria-labelledby="contact-form-title">
+        <h1 id="contact-form-title">Liên hệ</h1>
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>Thông tin cơ bản</legend>
+            <p>
+              <label for="full-name">Họ tên</label><br /><input
+                id="full-name"
+                name="full_name"
+                type="text"
+                required
+                minlength="2"
+              />
+            </p>
+            <p>
+              <label for="email">Email</label><br /><input
+                id="email"
+                name="email"
+                type="email"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">Số điện thoại</label><br /><input
+                id="phone"
+                name="phone"
+                type="tel"
+                pattern="[0-9]{10,11}"
+                required
+              />
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Chi tiết yêu cầu</legend>
+            <p>
+              <label for="topic">Chủ đề</label><br /><select
+                id="topic"
+                name="topic"
+                required
+              >
+                <option value="">-- Chọn chủ đề --</option>
+                <option value="project">Hỏi về dự án</option>
+                <option value="collab">Hợp tác</option>
+                <option value="recruitment">Tuyển dụng</option>
+                <option value="other">Khác</option>
+              </select>
+            </p>
+            <fieldset>
+              <legend>Mức độ ưu tiên</legend>
+              <label
+                ><input type="radio" name="priority" value="low" required />
+                Thấp</label
+              ><label
+                ><input type="radio" name="priority" value="medium" /> Trung
+                bình</label
+              ><label
+                ><input type="radio" name="priority" value="high" /> Cao</label
+              >
+            </fieldset>
+            <fieldset>
+              <legend>Dịch vụ quan tâm</legend>
+              <label
+                ><input type="checkbox" name="services" value="web" /> Web
+                Development</label
+              ><label
+                ><input type="checkbox" name="services" value="mobile" /> Mobile
+                App</label
+              ><label
+                ><input type="checkbox" name="services" value="uiux" /> UI/UX
+                Design</label
+              ><label
+                ><input type="checkbox" name="services" value="consulting" />
+                Consulting</label
+              >
+            </fieldset>
+            <p>
+              <label for="message">Tin nhắn</label><br /><textarea
+                id="message"
+                name="message"
+                rows="6"
+                minlength="10"
+                placeholder="Nhập tin nhắn của bạn..."
+                required
+              ></textarea>
+            </p>
+            <p>
+              <label for="rating">Đánh giá website này: 1-5 sao</label
+              ><br /><input
+                id="rating"
+                name="rating"
+                type="range"
+                min="1"
+                max="5"
+                value="5"
+              />
+            </p>
+            <p>
+              <label for="attachment">Đính kèm CV hoặc tài liệu (nếu có)</label
+              ><br /><input
+                id="attachment"
+                name="attachment"
+                type="file"
+                accept=".pdf,.doc,.docx"
+              />
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" name="terms" required /> Tôi đồng ý với
+                <a href="#">Chính sách bảo mật</a>
+              </label>
+            </p>
+          </fieldset>
+          <p>
+            <button type="submit" style="margin-right: 20px">
+              Gửi tin nhắn</button
+            ><button type="reset">Xóa form</button>
+          </p>
+        </form>
+      </section>
+      <section aria-labelledby="contact-info-title">
+        <h2 id="contact-info-title">Thông tin liên hệ</h2>
+        <address>
+          Email:
+          <a href="mailto:hangloc.dev@example.com">hangloc.dev@example.com</a
+          ><br />Điện thoại: <a href="tel:+84901234567">+84 901 234 567</a
+          ><br />Địa chỉ: 123 Đường Công Nghệ, Quận 1, TP.HCM
+        </address>
+        <p>
+          Kết nối social:
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >,
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >,
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </p>
+      </section>
+      <section aria-labelledby="map-title">
+        <h2 id="map-title">Bản đồ</h2>
+        <iframe
+          title="Bản đồ vị trí làm việc"
+          src="https://www.google.com/maps?q=Ho+Chi+Minh+City&output=embed"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <section aria-labelledby="hours-title">
+        <h2 id="hours-title">Giờ làm việc</h2>
+        <table>
+          <caption>
+            Lịch làm việc trong tuần
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Ngày</th>
+              <th scope="col">Khung giờ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Thứ 2 - Thứ 6</td>
+              <td>
+                <time datetime="09:00">09:00</time> -
+                <time datetime="18:00">18:00</time>
+              </td>
+            </tr>
+            <tr>
+              <td>Thứ 7</td>
+              <td>
+                <time datetime="09:00">09:00</time> -
+                <time datetime="12:00">12:00</time>
+              </td>
+            </tr>
+            <tr>
+              <td>Chủ nhật</td>
+              <td>Nghỉ</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p><small>&copy; 2026 Hàng Lộc. All rights reserved.</small></p>
+      <nav aria-label="Mạng xã hội">
+        <ul>
+          <li>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="mdi mdi-facebook"></span> Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="mdi mdi-instagram"></span> Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="mdi mdi-twitter"></span> Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="mdi mdi-github"></span> Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="mdi mdi-linkedin"></span> LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <p><a href="#top">Lên đầu trang</a></p>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
