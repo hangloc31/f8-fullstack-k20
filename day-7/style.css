@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  padding: 20px;
+}
+
+.card-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #cacaca;
+}
+
+.card-container p {
+  padding: 20px 20px 0 20px;
+  font-weight: bold;
+}
+
+.container {
+  width: 600px;
+  height: 200px;
+  margin: 20px;
+  border: 3px solid red;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+  font-weight: bolder;
+  background-color: #66c3ac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container 1 */
+.container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Container 2 */
+.container-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Container 3 */
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-3 > .box-2 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* Container 4 */
+.container-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-4 > .box-2 {
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+/* Container 5 */
+.container-5 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container 6 */
+.container-6 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Container 7 */
+.container-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-7 > .box-2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/* Container 8 */
+.container-8 {
+  display: flex;
+}
+
+.container-8 > .box-2 {
+  margin: auto;
+}
+
+.container-8 > .box-1 {
+  margin: auto 0;
+}
+
+.container-8 > .box-3 {
+  margin: auto 0;
+}
+
+/* Container 9 */
+.container-9 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.container-9 > .box-1 {
+  margin-bottom: 60px;
+}
+
+.container-9 > .box-3 {
+  margin-top: 60px;
+}
+
+/* Container 10 */
+.container-10 {
+  display: flex;
+}
+
+.container-10 > .box-2 {
+  margin: auto;
+}
+
+.container-10 > .box-3 {
+  margin-top: auto;
+}
