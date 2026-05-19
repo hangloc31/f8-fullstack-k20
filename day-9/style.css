@@ -1,0 +1,110 @@
+/* ------- Reset ------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------- Body & Overall Background ------- */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebf5fe;
+  color: #666666;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------- Container ------- */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ------- Card List ------- */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* ------- Individual Card ------- */
+.card-item {
+  /* 3 cards per row — subtract gap */
+  flex: 1 1 calc((100% - 40px) / 3);
+  min-width: 300px;
+  background-color: #ffffff;
+  border: 3px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 30px;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* ------- Card Hover Effects ------- */
+.card-item-ui:hover {
+  border: 3px solid #ff6b6b;
+}
+.card-item-theme:hover {
+  border: 3px solid #4ecdc4;
+}
+.card-item-marketing:hover {
+  border: 3px solid #f9a825;
+}
+.card-item-website:hover {
+  border: 3px solid #5e9cff;
+}
+.card-item-responsive:hover {
+  border: 3px solid #9b59b6;
+}
+.card-item-support:hover {
+  border: 3px solid #7cb342;
+}
+
+/* ------- Icon Container (Circle) ------- */
+.card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+  color: #ffffff;
+}
+
+/* ------- Card Title ------- */
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.3;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* ------- Card Description ------- */
+.card-desc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ------- Learn More Link ------- */
+.card-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #2196f3;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
