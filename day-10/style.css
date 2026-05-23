@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------ Arrow move around box ------------*/
+
+.box {
+  width: 500px;
+  height: 500px;
+  border: 3px solid tomato;
+  margin: 10px;
+  position: relative;
+}
+
+.arrow-container {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center center;
+  animation: moveAroundBox 8s linear infinite;
+}
+
+@keyframes moveAroundBox {
+  /* 1. Điểm xuất phát: Góc dưới bên phải */
+  0% {
+    bottom: -16px; /* -16px = một nửa chiều cao 32px để tâm nằm đè lên viền */
+    right: -16px;
+    transform: rotate(0deg);
+  }
+  /* 2. Đến góc dưới bên trái */
+  25% {
+    bottom: -16px;
+    right: calc(100% - 16px);
+    transform: rotate(0deg);
+  }
+  25.01% {
+    transform: rotate(90deg);
+  } /* Xoay hướng lên */
+
+  /* 3. Đến góc trên bên trái */
+  50% {
+    bottom: calc(100% - 16px);
+    right: calc(100% - 16px);
+    transform: rotate(90deg);
+  }
+  50.01% {
+    transform: rotate(180deg);
+  } /* Xoay hướng sang phải */
+
+  /* 4. Đến góc trên bên phải */
+  75% {
+    bottom: calc(100% - 16px);
+    right: -16px;
+    transform: rotate(180deg);
+  }
+  75.01% {
+    transform: rotate(270deg);
+  } /* Xoay hướng xuống */
+
+  /* 5. Về lại điểm xuất phát */
+  100% {
+    bottom: -16px;
+    right: -16px;
+    transform: rotate(270deg);
+  }
+}
+
+/* ------------ Heart beat ------------*/
+
+.heart {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: #e31b23;
+  transform: rotate(45deg);
+  animation: heartBeat 2s ease-in-out alternate infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #e31b23;
+}
+
+.heart::before {
+  top: 0;
+  left: -150px;
+}
+
+.heart::after {
+  top: -150px;
+  left: 0;
+}
+
+.name {
+  position: absolute;
+  z-index: 1;
+  font-size: 40px;
+  /* transform: rotate(-45deg); */
+  color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  white-space: nowrap;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.25);
+  }
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+}
