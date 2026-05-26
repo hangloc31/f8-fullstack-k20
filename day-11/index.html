@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Card Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8be3047b8d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">My Website</div>
+
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a class="nav__link" href="#link1">Link 1</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#link2">Link 2</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#link3">Link 3</a>
+          </li>
+        </ul>
+
+        <div class="header__hamburger" id="open-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+
+      <div class="overlay" id="overlay"></div>
+
+      <div class="header__nav" id="side-menu">
+        <div class="header__close-btn" id="close-menu">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <ul class="header__menu-links">
+          <li class="header__item">
+            <a class="header__link" href="#1">Link 1</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#2">Link 2</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#3">Link 3</a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        id="darkModeToggle"
+        class="toggle-button"
+        style="cursor: pointer; font-size: 2.4rem"
+      >
+        <i id="weatherIcon" class="fa-solid fa-cloud-moon"></i>
+      </div>
+    </header>
+    <main class="container">
+      <section class="container__content">
+        <h1 class="container__title">This is the main heading</h1>
+        <p class="container__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut a
+          eveniet sequi fuga deserunt numquam vero, ipsum laudantium praesentium
+          nobis!
+        </p>
+        <p class="container__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At rem
+          accusantium, quam voluptas commodi pariatur expedita laudantium in!
+          Cumque saepe tempora temporibus illum ratione earum, accusantium
+          voluptatem voluptatum quae excepturi?
+        </p>
+        <div class="cards">
+          <div class="card">
+            <h2 class="card__title">Card One</h2>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi non
+              inventore culpa excepturi alias.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">Card Two</h2>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi non
+              inventore culpa excepturi alias. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">Card Three</h2>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi non
+              inventore culpa excepturi alias. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Accusantium, ipsum neque.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">Card Four</h2>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi non
+              inventore culpa excepturi alias. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Accusantium, ipsum neque.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">Card Five</h2>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi non
+              inventore culpa excepturi alias. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Accusantium, ipsum neque.
+            </p>
+          </div>
+        </div>
+      </section>
+      <aside class="container__sidebar">
+        <p class="container__question">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iure
+          neque repellat?
+        </p>
+      </aside>
+    </main>
+    <footer class="footer"></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
